@@ -67,69 +67,22 @@
         button:active {
             background-color: #003366;
         }
-        .btn-incidencia {
-            background-color: var(--pepsi-red);
-            margin-top: 5px;
-        }
-        .client-item {
-            background: #f9f9f9;
-            padding: 12px;
-            border-radius: 8px;
-            margin-bottom: 10px;
-            border-left: 5px solid var(--pepsi-blue);
-        }
-        .client-actions {
-            display: flex;
-            gap: 10px;
-            margin-top: 10px;
-        }
-        .client-actions button {
-            margin: 0;
-            font-size: 0.9rem;
-            padding: 8px;
-        }
     </style>
 </head>
 <body>
 
-    <header>🥤 Preventa & Gestión de Visitas</header>
+    <header>🥤 Preventa Pepsi & Distribución</header>
 
     <div class="container">
-        
-        <!-- SECCIÓN 1: CREAR CLIENTE -->
+        <!-- Sección Clientes / Pedidos original -->
         <div class="card">
-            <h2>1. Añadir Cliente</h2>
-            <input type="text" id="nombreCliente" placeholder="Ej. Bar El Rincón">
-            <select id="categoriaCliente">
-                <option value="A+">Segmento A+ (Hostelería Top)</option>
-                <option value="A">Segmento A (Tienda / Bodega)</option>
-                <option value="B">Segmento B (Panadería / Alimentación)</option>
-                <option value="C">Segmento C (Kiosco / Impulso)</option>
-            </select>
-            <button onclick="guardarCliente()">Guardar Cliente</button>
+            <h2>Gestión Comercial</h2>
+            <p>Aplicación de preventa conectada con distribución.</p>
         </div>
-
-        <!-- SECCIÓN 2: REGISTRAR PEDIDO -->
-        <div class="card">
-            <h2>2. Registrar Pedido / Preventa</h2>
-            <select id="selectClientePedido">
-                <option value="">Selecciona un cliente...</option>
-            </select>
-            <input type="number" id="unidadesPedido" placeholder="Cantidad de cajas (Ej. 5)" min="1">
-            <button onclick="registrarPedido()">Registrar y Enviar Pedido</button>
-        </div>
-
-        <!-- SECCIÓN 3: LISTADO Y CONTROL DE VISITA (DÍA SIGUIENTE) -->
-        <div class="card">
-            <h2>3. Control de Ruta y Visitas</h2>
-            <div id="listaClientes">
-                <!-- Los clientes y sus controles de entrega aparecerán aquí automáticamente -->
-            </div>
-        </div>
-
     </div>
 
-    <!-- Script principal de la lógica -->
+    <!-- Scripts originales -->
     <script src="app.js"></script>
+    <script src="entregas.js"></script>
 </body>
 </html>
